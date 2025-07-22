@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><%= t(".title") %></h1>
+
+<div id="products">
+  <%= render(@products) || t(".notfound") %>
+</div>
+
+<%= link_to t(".newproduct"), new_product_path %>

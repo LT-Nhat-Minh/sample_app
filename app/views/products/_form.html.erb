@@ -1,0 +1,25 @@
+<%= form_with(model: product) do |form| %>
+  <% if product.errors.any? %>
+    <div class="form-error-messages">
+      <h2>
+        <%= pluralize(product.errors.count, t("error"))%>
+        <%= t(".error") %>
+      </h2>
+
+      <ul>
+        <% product.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, t("name"), class: "block-label" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

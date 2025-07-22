@@ -1,0 +1,57 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+/* universal */
+body {
+  padding-top: 60px;
+}
+
+section { 
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.navbar {
+  background-color: #ffd154;
+}
+
+.language-switcher{
+  float: right;
+  margin-right: 20px;
+}
+
+.block-label {
+  display: block;
+}
+
+.form-error-messages {
+  color: red;
+}
+
+/* header */
+#logo {
+  color: #fff;
+  float: left;
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: -1px;  
+  margin-right: 10px;
+  padding-top: 9px;
+  text-transform: uppercase;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
