@@ -3,10 +3,9 @@ en:
   vietnamese: "Vietnamese"
   error: "Error"
   name: "Name"
-
-  header:
-    index:
-      home: "Home"
-      help: "Help"
-      login: "Log in"
-    logo: "Sample App"
+  account: "Account"
+  users_t: "Users"
+  home: "Home"
+  help: "Help"
+  login: "Log in"
+  logo: "Sample App"

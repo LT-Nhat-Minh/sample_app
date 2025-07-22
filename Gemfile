@@ -57,6 +57,8 @@ gem "bcrypt", "~> 3.1.7"
 
 gem "byebug"
 
+gem "webpacker"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html
   gem "debug", platforms: %i(mri mingw x64_mingw)
