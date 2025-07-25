@@ -1,0 +1,12 @@
+vi:
+  english: "Tiếng Anh"
+  vietnamese: "Tiếng Việt"
+  error: "Lỗi"
+  name: "Tên sản phẩm"
+
+  header:
+    index:
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+    logo: "Ứng dụng Mẫu"
