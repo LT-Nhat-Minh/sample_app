@@ -1,0 +1,38 @@
+vi:
+  products:
+    shared: &product_actions
+      show: "Hiển thị sản phẩm"
+      back: "Quay lại sản phẩm"
+      edit: "Chỉnh sửa sản phẩm này"
+      destroy: "Xóa sản phẩm này"   
+
+    show: 
+      <<: *product_actions
+
+    edit:
+      <<: *product_actions
+      title: "Chỉnh sửa sản phẩm"
+    
+    new:
+      <<: *product_actions
+      title: "Tạo sản phẩm mới"
+
+    set_product:
+      notfound: "Sản phẩm không tìm thấy."
+
+    create_action:
+      success_action: "Sản phẩm đã được tạo thành công."
+
+    update:
+      success_action: "Sản phẩm đã được cập nhật thành công."
+
+    destroy:
+      success_action: "Sản phẩm đã được xóa thành công."
+
+    index: 
+      title: "Sản phẩm"
+      notfound: "Không tìm thấy sản phẩm."
+      newproduct: "Sản phẩm mới"    
+
+    form:
+      error: "sản phẩm này đã không được lưu trữ:"

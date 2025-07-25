@@ -1,0 +1,20 @@
+en:
+  static_pages:
+    home:
+      title: "Home"
+      intro: "This is the home page for the Ruby on Rails Tutorial."
+      information: "This is the home page for the"
+      railstutorial: "Ruby on Rails Tutorial"
+      samplesaplication: "sample application."
+
+    help:
+      title: "Help"
+      intro: "Get help on the Ruby on Rails Tutorial at the Rails Tutorial help page."
+      railstutorial: "Rails Tutorial help page"
+      more_info: "To get help on this sample app, see the"
+      rubyonrailstutorial: "Ruby on Rails Tutorial"
+      book: "book"
+
+    login:
+      title: "Log in"
+      intro: "This is the login page for the Ruby on Rails Tutorial sample application."

@@ -1,0 +1,38 @@
+en:
+  products:
+    shared: &product_actions
+      show: "Show product"
+      back: "Back to products"
+      edit: "Edit this product"
+      destroy: "Destroy this product"
+
+    show: 
+      <<: *product_actions
+
+    edit:
+      <<: *product_actions
+      title: "Edit Product"
+    
+    new:
+      <<: *product_actions
+      title: "New Product"
+
+    set_product:
+      notfound: "Product not found."
+
+    create_action:
+      success: "Product was successfully created."
+
+    update_action:
+      success: "Product was successfully updated."  
+
+    destroy_action:
+      success: "Product was successfully destroyed." 
+
+    index: 
+      title: "Products"
+      notfound: "No products found."
+      newproduct: "New Product"
+
+    form:
+      error: "prohibited this product from being saved:"  
