@@ -1,0 +1,25 @@
+vi:
+  activerecord:
+    models:
+      user: "Người dùng"
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+    
+    errors:
+      models:
+        user:
+          attributes:
+            birthday:
+              in_future: "Phải là ngày trong quá khứ"
+              too_old: "Ngày sinh không được cách hơn 100 năm"
+
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      blank: "không được để trống"
+      too_long: "quá dài (tối đa %{count} ký tự)"
+      too_short: "quá ngắn (tối thiểu %{count} ký tự)"
+      taken: "đã được sử dụng"
+      invalid: "không hợp lệ"
