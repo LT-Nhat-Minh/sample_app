@@ -1,0 +1,9 @@
+vi:
+  users:
+    show:
+      not_found: "Người dùng không tìm thấy"
+    new:
+      sign_up: "Đăng ký"
+      create_account: "Tạo tài khoản"
+    create:
+      success: "Tài khoản đã được tạo thành công"

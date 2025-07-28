@@ -1,0 +1,9 @@
+en:
+  users:
+    show:
+      not_found: "User not found"
+    new:
+      sign_up: "Sign up"
+      create_account: "Create account"
+    create:
+      success: "Account created successfully"

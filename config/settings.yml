@@ -5,3 +5,6 @@ user:
   name_max_length: 50
   email_max_length: 255
   birthday_min_age: 100
+
+gravatar:
+  base_url: "https://secure.gravatar.com/avatar"

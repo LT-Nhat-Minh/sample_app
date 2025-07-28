@@ -2,8 +2,44 @@
 @import 'bootstrap';
 
 /* universal */
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    margin-top: 20px;
+    padding: 10px 0;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    h1 {
+      font-size: 1.4em;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+      text-align: left;
+    }
+    span {
+      display: block;
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+  }
+}
+
 body {
   padding-top: 60px;
+}
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input {
+  height: auto !important;
 }
 
 section { 
@@ -20,6 +56,14 @@ textarea {
 
 .center h1 {
   margin-bottom: 10px;
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+.gravatar_edit {
+  margin-top: 15px;
 }
 
 .navbar {
