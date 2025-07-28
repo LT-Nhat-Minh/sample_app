@@ -9,3 +9,8 @@ en:
   help: "Help"
   login: "Log in"
   logo: "Sample App"
+  password_confirmation: "Password confirmation"
+  are_you_sure: "Are you sure?"
+  delete: "Delete"
+  account_activation_subject: "Account activation"
+  password_reset_subject: "Password reset"
