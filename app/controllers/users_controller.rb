@@ -21,6 +21,8 @@ class UsersController < ApplicationController
     end
   end
 
+  private
+
   def load_user
     @user = User.find_by id: params[:id]
     return if @user
@@ -29,7 +31,6 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
-  private
   def user_params
     params.require(:user).permit User::USER_PERMIT
   end
