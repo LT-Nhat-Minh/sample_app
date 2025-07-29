@@ -1,2 +1,7 @@
 help_url: "http://www.railstutorial.org/help"
 book_url: "http://www.railstutorial.org/book"
+
+user:
+  name_max_length: 50
+  email_max_length: 255
+  birthday_min_age: 100

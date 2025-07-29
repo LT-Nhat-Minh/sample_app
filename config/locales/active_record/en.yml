@@ -1,0 +1,25 @@
+en:
+  activerecord:
+    models:
+      user: "User"
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+
+    errors:
+      models:
+        user:
+          attributes:
+            birthday:
+              in_future: "Must be in the past"
+              too_old: "Date of birth cannot be more than 100 years ago"
+
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      blank: "can't be blank"
+      too_long: "is too long (maximum is %{count} characters)"
+      too_short: "is too short (minimum is %{count} characters)"
+      taken: "has already been taken"
+      invalid: "is invalid"
