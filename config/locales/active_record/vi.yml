@@ -6,6 +6,8 @@ vi:
       user:
         name: "Tên"
         email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
     
     errors:
       models:

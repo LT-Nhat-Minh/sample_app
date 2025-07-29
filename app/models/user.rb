@@ -3,12 +3,14 @@ class User < ApplicationRecord
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
+  USER_PERMIT = %i(name email password birthday).freeze
+
   validates :name, presence: true,
-                   length: { maximum: Settings.user.name_max_length }
+                   length: {maximum: Settings.user.name_max_length}
   validates :email,
             presence: true,
-            length: { maximum: Settings.user.email_max_length },
-            format: { with: VALID_EMAIL_REGEX },
+            length: {maximum: Settings.user.email_max_length},
+            format: {with: VALID_EMAIL_REGEX},
             uniqueness: true
 
   validate :birthday_valid
@@ -24,7 +26,7 @@ class User < ApplicationRecord
   def birthday_valid
     return if birthday.blank?
 
-    if birthday > Date.today
+    if birthday > Time.zone.today
       errors.add(:birthday, :in_future)
     elsif birthday < Settings.user.birthday_min_age.years.ago
       errors.add(:birthday, :too_old)
