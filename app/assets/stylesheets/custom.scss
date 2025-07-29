@@ -58,6 +58,15 @@ textarea {
   margin-bottom: 10px;
 }
 
+.checkbox {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  span {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+}
+
 .dropdown-menu.active{
   display: block;
 }
@@ -102,4 +111,9 @@ textarea {
 #logo:hover {
   color: #fff;
   text-decoration: none;
+}
+
+#session_remember_me {
+  margin-left: 0;
+  width: auto;
 }

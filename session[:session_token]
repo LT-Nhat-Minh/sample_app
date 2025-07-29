@@ -1,0 +1,11 @@
+
+[1mFrom:[0m /home/nhatminh/Ruby/sample_app/app/helpers/sessions_helper.rb:41 SessionsHelper#session_signin:
+
+    [1;34m40[0m: [32mdef[0m [1;34msession_signin[0m user
+ => [1;34m41[0m:   binding.pry
+    [1;34m42[0m:   forget user
+    [1;34m43[0m:   session[[33m:session_token[0m] = user.create_session_token
+    [1;34m44[0m:   session[[33m:user_id[0m] = user.id
+    [1;34m45[0m:   binding.pry
+    [1;34m46[0m: [32mend[0m
+
