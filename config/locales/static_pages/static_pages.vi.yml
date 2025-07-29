@@ -1,0 +1,20 @@
+vi:
+  static_pages:
+    home:
+      title: "Trang chủ"
+      intro: "Đây là trang chủ của Hướng dẫn Ruby on Rails."
+      information: "Đây là trang chủ của"
+      railstutorial: "Hướng dẫn Ruby on Rails"
+      samplesaplication: "ứng dụng mẫu."
+
+    help:
+      title: "Trợ giúp"
+      intro: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại trang trợ giúp."
+      railstutorial: "trang trợ giúp Hướng dẫn Rails"
+      more_info: "Để nhận trợ giúp về ứng dụng mẫu này, xem"
+      rubyonrailstutorial: "Hướng dẫn Ruby on Rails"
+      book: "sách"
+
+    login:
+      title: "Đăng nhập"
+      intro: "Đây là trang đăng nhập cho ứng dụng mẫu Hướng dẫn Ruby on Rails."

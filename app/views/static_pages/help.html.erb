@@ -1,0 +1,15 @@
+<% provide :title, "HELP" %>
+<h1><%= t ".title" %></h1>
+<p>
+    <%= t ".intro" %>
+    <%= link_to Settings.help_url do %>
+        <%= t ".railstutorial" %>
+    <% end %>
+    <%= t ".more_info" %>
+    <%= link_to Settings.book_url do %>
+        <em>
+          <%= t ".rails_tutorial" %>
+        </em>
+        <%= t ".book" %>
+    <% end %>
+</p>
