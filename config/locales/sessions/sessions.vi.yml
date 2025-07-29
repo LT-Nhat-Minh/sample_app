@@ -1,0 +1,9 @@
+vi:
+  sessions:
+    new:
+      log_in: "Đăng nhập"
+      new_user?: "Bạn chưa có tài khoản?"
+      sign_up_now!: "Đăng ký ngay!"
+    create:
+      invalid_email_or_password: "Email hoặc mật khẩu không hợp lệ."
+      not_found: "Không tìm thấy người dùng."

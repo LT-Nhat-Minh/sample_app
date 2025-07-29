@@ -1,5 +1,5 @@
-@import 'bootstrap-sprockets';
-@import 'bootstrap';
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 /* universal */
 aside {
@@ -56,6 +56,10 @@ textarea {
 
 .center h1 {
   margin-bottom: 10px;
+}
+
+.dropdown-menu.active{
+  display: block;
 }
 
 .gravatar {
