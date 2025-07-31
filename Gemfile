@@ -59,6 +59,14 @@ gem "byebug"
 
 gem "webpacker"
 
+gem "pry"
+
+gem "pry-byebug"
+
+gem "faker", "2.21.0"
+
+gem "pagy"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html
   gem "debug", platforms: %i(mri mingw x64_mingw)

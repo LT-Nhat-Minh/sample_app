@@ -6,7 +6,16 @@ class SessionsController < ApplicationController
 
   def create
     log_in @user
+    if params.dig(:session, :remember_me) == "1"
+      remember_signin(@user)
+    else
+      session_signin(@user)
+    end
+<<<<<<< Updated upstream
     redirect_to @user
+=======
+    redirect_back_or @user
+>>>>>>> Stashed changes
   end
 
   def destroy
@@ -25,7 +34,7 @@ class SessionsController < ApplicationController
   end
 
   def check_authentication
-    return if @user&.authenticate params.dig(:session, :password)
+    return if @user.try(:authenticate, params.dig(:session, :password))
 
     flash.now[:danger] = t ".invalid_email_or_password"
     render :new, status: :unprocessable_entity

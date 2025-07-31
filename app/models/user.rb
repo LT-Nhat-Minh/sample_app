@@ -13,9 +13,56 @@ class User < ApplicationRecord
             format: {with: VALID_EMAIL_REGEX},
             uniqueness: true
 
+  validates :password,
+            presence: true,
+            length: {minimum: Settings.user.password_min_length},
+            allow_nil: true
+
   validate :birthday_valid
 
   before_save :downcase_email
+
+  attr_accessor :remember_token, :session_token
+
+  class << self
+    def digest string
+      cost = if ActiveModel::SecurePassword.min_cost
+               BCrypt::Engine::MIN_COST
+             else
+               BCrypt::Engine.cost
+             end
+      BCrypt::Password.create(string, cost:)
+    end
+
+    def new_token
+      SecureRandom.urlsafe_base64
+    end
+  end
+
+  def remember
+    self.remember_token = User.new_token
+    update_column :remember_digest, User.digest(remember_token)
+  end
+
+  def authenticated? remember_token
+    BCrypt::Password.new(remember_digest).is_password? remember_token
+  end
+
+  def create_session_token
+    self.session_token = User.new_token
+    update_column :remember_digest, User.digest(session_token)
+    remember_token
+  end
+
+  def authenticated_with_session? session_token
+    return false if remember_digest.nil?
+
+    BCrypt::Password.new(remember_digest).is_password? session_token
+  end
+
+  def forget
+    update_column :remember_digest, nil
+  end
 
   private
 
@@ -32,15 +79,4 @@ class User < ApplicationRecord
       errors.add(:birthday, :too_old)
     end
   end
-
-  def self.digest string
-    cost = if ActiveModel::SecurePassword.min_cost
-             BCrypt::Engine::MIN_COST
-           else
-             BCrypt::Engine.cost
-           end
-    BCrypt::Password.create string, cost:
-  end
-
-  private_class_method :digest
 end

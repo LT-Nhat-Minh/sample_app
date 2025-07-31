@@ -4,6 +4,9 @@ vi:
       log_in: "Đăng nhập"
       new_user?: "Bạn chưa có tài khoản?"
       sign_up_now!: "Đăng ký ngay!"
+      remember_me: "Ghi nhớ đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
     create:
       invalid_email_or_password: "Email hoặc mật khẩu không hợp lệ."
       not_found: "Không tìm thấy người dùng."
