@@ -13,6 +13,11 @@ class User < ApplicationRecord
             format: {with: VALID_EMAIL_REGEX},
             uniqueness: true
 
+  validates :password,
+            presence: true,
+            length: {minimum: Settings.user.password_min_length},
+            allow_nil: true
+
   validate :birthday_valid
 
   before_save :downcase_email

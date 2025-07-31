@@ -11,7 +11,11 @@ class SessionsController < ApplicationController
     else
       session_signin(@user)
     end
+<<<<<<< Updated upstream
     redirect_to @user
+=======
+    redirect_back_or @user
+>>>>>>> Stashed changes
   end
 
   def destroy
