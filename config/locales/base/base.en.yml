@@ -14,3 +14,8 @@ en:
   delete: "Delete"
   account_activation_subject: "Account activation"
   password_reset_subject: "Password reset"
+  submit: "Submit"
+  not_found: "User not found."
+  invalid_user: "Invalid user."
+  blank: "Password can't be blank."
+  success: "Password has been reset."

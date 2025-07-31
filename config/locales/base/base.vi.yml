@@ -14,3 +14,4 @@ vi:
   delete: "Xóa"
   account_activation_subject: "Kích hoạt tài khoản"
   password_reset_subject: "Đặt lại mật khẩu"
+  submit: "Xác nhận"

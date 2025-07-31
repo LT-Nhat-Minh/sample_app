@@ -7,6 +7,7 @@ vi:
       remember_me: "Ghi nhớ đăng nhập"
       email: "Email"
       password: "Mật khẩu"
+      forgot_password?: "Quên mật khẩu?"
     create:
       invalid_email_or_password: "Email hoặc mật khẩu không hợp lệ."
       not_found: "Không tìm thấy người dùng."

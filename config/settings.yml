@@ -5,9 +5,6 @@ mailtrap:
   authentication: :plain
   address: "sandbox.smtp.mailtrap.io"
   enable_starttls_auto: true
-  user_name: "e93d1ae1168bcd"
-  password: "a30d4df2a87748"
-  domain: "sandbox.smtp.mailtrap.io"
 
 help_url: "http://www.railstutorial.org/help"
 book_url: "http://www.railstutorial.org/book"
