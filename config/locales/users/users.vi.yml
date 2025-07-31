@@ -9,6 +9,10 @@ vi:
       create_account: "Tạo tài khoản"
     create:
       success: "Tài khoản đã được tạo thành công"
+<<<<<<< Updated upstream
+=======
+      check_email: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản"
+>>>>>>> Stashed changes
     edit:
       not_found: "Người dùng không tìm thấy"
       title: "Chỉnh sửa người dùng"

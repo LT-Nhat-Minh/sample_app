@@ -40,6 +40,17 @@ module SessionsHelper
     session[:user_id] = user.id
   end
 
+<<<<<<< Updated upstream
+=======
+  def signin_remember_or_session user
+    if params[:session][:remember_me] == "1"
+      remember_signin user
+    else
+      session_signin user
+    end
+  end
+
+>>>>>>> Stashed changes
   private
 
   def find_user_from_session user_id
@@ -55,7 +66,11 @@ module SessionsHelper
 
   def find_user_from_cookies user_id
     user = User.find_by(id: user_id)
+<<<<<<< Updated upstream
     return unless user&.authenticated?(cookies[:remember_token])
+=======
+    return unless user&.authenticated?(:remember, cookies[:remember_token])
+>>>>>>> Stashed changes
 
     log_in(user)
     user

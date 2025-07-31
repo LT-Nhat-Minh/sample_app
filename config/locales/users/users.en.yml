@@ -9,6 +9,10 @@ en:
       create_account: "Create account"
     create:
       success: "Account created successfully"
+<<<<<<< Updated upstream
+=======
+      check_email: "Please check your email to activate your account"
+>>>>>>> Stashed changes
     edit:
       not_found: "User not found"
       title: "Edit User"

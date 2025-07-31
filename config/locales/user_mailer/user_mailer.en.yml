@@ -1,0 +1,6 @@
+en:
+  user_mailer:
+    account_activation:
+      greeting_activate_account: "Hello, please activate your account by clicking the link below:"
+    password_reset:
+      greeting_reset_password: "Hello, please reset your password by clicking the link below:"

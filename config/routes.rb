@@ -19,5 +19,6 @@ Rails.application.routes.draw do
 
     resources :users, only: %i(index new create show edit update destroy)
     resources :products
+    resources :account_activations, only: :edit
   end
 end
