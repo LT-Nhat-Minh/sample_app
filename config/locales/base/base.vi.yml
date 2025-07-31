@@ -9,3 +9,11 @@ vi:
   help: "Trợ giúp"
   login: "Đăng nhập"
   logo: "Ứng dụng Mẫu"
+  password_confirmation: "Xác nhận mật khẩu"
+  are_you_sure: "Bạn có chắc chắn không?"
+  delete: "Xóa"
+<<<<<<< Updated upstream
+=======
+  account_activation_subject: "Kích hoạt tài khoản"
+  password_reset_subject: "Đặt lại mật khẩu"
+>>>>>>> Stashed changes
