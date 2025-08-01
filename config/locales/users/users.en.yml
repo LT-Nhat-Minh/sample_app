@@ -1,5 +1,7 @@
 en:
   users:
+    index:
+      title: "All Users"
     show:
       not_found: "User not found"
     new:
@@ -7,3 +9,18 @@ en:
       create_account: "Create account"
     create:
       success: "Account created successfully"
+      check_email: "Please check your email to activate your account"
+    edit:
+      not_found: "User not found"
+      title: "Edit User"
+      update_your_profile: "Update your profile"
+      change: "Change"
+    form:
+      save_changes: "Save changes"
+    update:
+      success: "Profile updated successfully"
+    destroy:
+      success: "User deleted successfully"
+      error: "Failed to delete user"
+    please_log_in: "Please log in"
+    cannot_edit: "You cannot edit this user"

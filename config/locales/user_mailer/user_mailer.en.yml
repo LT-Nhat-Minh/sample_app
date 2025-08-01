@@ -1,0 +1,10 @@
+en:
+  user_mailer:
+    account_activation:
+      greeting_activate_account: "Hello, please activate your account by clicking the link below:"
+    password_reset:
+      title: "Password Reset"
+      greeting_reset_password: "Hello, please reset your password by clicking the link below:"
+      expiration_notice: "This link will expire in two hours."
+      ignore_notice: "If you did not request your password to be reset, please ignore this email, and your password will stay as it is."
+      to_reset_password: "To reset your password, click the link below:"

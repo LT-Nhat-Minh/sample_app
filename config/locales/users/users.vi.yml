@@ -1,5 +1,7 @@
 vi:
   users:
+    index:
+      title: "Tất cả người dùng"
     show:
       not_found: "Người dùng không tìm thấy"
     new:
@@ -7,3 +9,18 @@ vi:
       create_account: "Tạo tài khoản"
     create:
       success: "Tài khoản đã được tạo thành công"
+      check_email: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản"
+    edit:
+      not_found: "Người dùng không tìm thấy"
+      title: "Chỉnh sửa người dùng"
+      update_your_profile: "Cập nhật hồ sơ của bạn"
+      change: "Thay đổi"
+    form:
+      save_changes: "Lưu thay đổi"
+    update:
+      success: "Hồ sơ đã được cập nhật thành công"
+    destroy:
+      success: "Người dùng đã được xóa thành công"
+      error: "Xóa người dùng không thành công"
+    please_log_in: "Vui lòng đăng nhập"
+    cannot_edit: "Bạn không thể chỉnh sửa người dùng này"

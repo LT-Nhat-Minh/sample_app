@@ -1,3 +1,11 @@
+localhost: "localhost:3000"
+
+mailtrap:
+  port: 2525
+  authentication: :plain
+  address: "sandbox.smtp.mailtrap.io"
+  enable_starttls_auto: true
+
 help_url: "http://www.railstutorial.org/help"
 book_url: "http://www.railstutorial.org/book"
 
@@ -5,6 +13,9 @@ user:
   name_max_length: 50
   email_max_length: 255
   birthday_min_age: 100
+  password_min_length: 6
+  items_per_page: 10
 
 gravatar:
   base_url: "https://secure.gravatar.com/avatar"
+  email: "https://gravatar.com/emails"

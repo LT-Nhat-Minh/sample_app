@@ -4,7 +4,10 @@ en:
       log_in: "Log in"
       new_user?: "New user?"
       sign_up_now!: "Sign up now!"
+      remember_me: "Remember me"
+      email: "Email"
+      password: "Password"
+      forgot_password?: "Forgot password?"
     create:
       invalid_email_or_password: "Invalid email or password."
       not_found: "User not found."
-    

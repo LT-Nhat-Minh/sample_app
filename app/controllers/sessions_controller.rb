@@ -5,8 +5,19 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    log_in @user
-    redirect_to @user
+    if @user&.authenticate params[:session][:password]
+      if @user.activated
+        log_in @user
+        signin_remember_or_session @user
+        redirect_back_or @user
+      else
+        flash[:warning] = t ".not_activated"
+        redirect_to root_url
+      end
+    else
+      flash.now[:danger] = t ".invalid_email_or_password"
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def destroy
@@ -25,7 +36,7 @@ class SessionsController < ApplicationController
   end
 
   def check_authentication
-    return if @user&.authenticate params.dig(:session, :password)
+    return if @user.try(:authenticate, params.dig(:session, :password))
 
     flash.now[:danger] = t ".invalid_email_or_password"
     render :new, status: :unprocessable_entity

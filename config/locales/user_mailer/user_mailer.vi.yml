@@ -1,0 +1,10 @@
+vi:
+  user_mailer:
+    account_activation:
+      greeting_activate_account: "Xin chào, vui lòng kích hoạt tài khoản của bạn bằng cách nhấp vào liên kết bên dưới:"
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      greeting_reset_password: "Xin chào, vui lòng đặt lại mật khẩu của bạn bằng cách nhấp vào liên kết bên dưới:"
+      expiration_notice: "Liên kết này sẽ hết hạn sau hai giờ."
+      ignore_notice: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ không thay đổi."
+      to_reset_password: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
