@@ -1,0 +1,13 @@
+en:
+  microposts:
+    gravatar_alt: "User's gravatar"
+    posted_ago: "Posted %{time} ago."
+    delete: "delete"
+    delete_confirm: "Are you sure?"
+    validations:
+      content:
+        presence: "Content can't be blank."
+        length: "Content is too long (maximum is %{count} characters)."
+      image:
+        content_type: "must be a valid image format"
+        size: "must be less than 5MB"

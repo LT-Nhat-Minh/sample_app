@@ -11,3 +11,4 @@ en:
     create:
       invalid_email_or_password: "Invalid email or password."
       not_found: "User not found."
+      please_log_in: "Please log in to continue."

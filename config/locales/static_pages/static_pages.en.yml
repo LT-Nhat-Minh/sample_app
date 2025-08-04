@@ -6,6 +6,7 @@ en:
       information: "This is the home page for the"
       railstutorial: "Ruby on Rails Tutorial"
       samplesaplication: "sample application."
+      post_title: "Posts"
 
     help:
       title: "Help"

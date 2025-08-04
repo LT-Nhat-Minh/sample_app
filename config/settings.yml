@@ -1,4 +1,6 @@
 localhost: "localhost:3000"
+digit_140: 140
+digit_500: 500
 
 mailtrap:
   port: 2525
@@ -19,3 +21,6 @@ user:
 gravatar:
   base_url: "https://secure.gravatar.com/avatar"
   email: "https://gravatar.com/emails"
+
+page:
+  items_per_page: 5

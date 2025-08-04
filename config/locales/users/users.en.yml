@@ -4,6 +4,7 @@ en:
       title: "All Users"
     show:
       not_found: "User not found"
+      microposts_heading: "Microposts (%{count})"
     new:
       sign_up: "Sign up"
       create_account: "Create account"

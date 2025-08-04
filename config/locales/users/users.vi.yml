@@ -4,6 +4,7 @@ vi:
       title: "Tất cả người dùng"
     show:
       not_found: "Người dùng không tìm thấy"
+      microposts_heading: "Bài viết (%{count})"
     new:
       sign_up: "Đăng ký"
       create_account: "Tạo tài khoản"

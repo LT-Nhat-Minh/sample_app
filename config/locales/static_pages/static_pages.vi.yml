@@ -6,6 +6,7 @@ vi:
       information: "Đây là trang chủ của"
       railstutorial: "Hướng dẫn Ruby on Rails"
       samplesaplication: "ứng dụng mẫu."
+      post_title: "Bài viết"
 
     help:
       title: "Trợ giúp"

@@ -11,3 +11,4 @@ vi:
     create:
       invalid_email_or_password: "Email hoặc mật khẩu không hợp lệ."
       not_found: "Không tìm thấy người dùng."
+      please_log_in: "Vui lòng đăng nhập để tiếp tục."

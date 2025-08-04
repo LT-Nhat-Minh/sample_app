@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_secure_password
+  has_many :microposts, dependent: :destroy
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   USER_PERMIT = %i(name email password birthday).freeze
@@ -36,6 +37,10 @@ class User < ApplicationRecord
     def new_token
       SecureRandom.urlsafe_base64
     end
+  end
+
+  def feed
+    microposts
   end
 
   def remember

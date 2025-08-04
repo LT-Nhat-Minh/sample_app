@@ -5,7 +5,9 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   # GET /users/:id
-  def show; end
+  def show
+    @page, @microposts = pagy @user.microposts, items: Settings.page.items_per_page
+  end
 
   # GET /users/new
   def new
@@ -70,14 +72,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit User::USER_PERMIT
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    flash[:danger] = t ".please_log_in"
-    store_location
-    redirect_to login_url
   end
 
   def correct_user

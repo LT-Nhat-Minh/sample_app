@@ -1,0 +1,13 @@
+vi:
+  microposts:
+    gravatar_alt: "Ảnh đại diện của người dùng"
+    posted_ago: "Đã đăng %{time} trước."
+    delete: "xóa"
+    delete_confirm: "Bạn có chắc chắn không?"
+  validations:
+    content:
+      presence: "Nội dung không được để trống."
+      length: "Nội dung quá dài (tối đa %{count} ký tự)."
+    image:
+      content_type: "phải là định dạng hình ảnh hợp lệ"
+      size: "phải nhỏ hơn 5MB"
